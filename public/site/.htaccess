@@ -1,0 +1,11 @@
+# Force HTTPS (301 redirect)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Nginx equivalent (if running on Nginx, place inside server block):
+# server {
+#     listen 80;
+#     server_name _;
+#     return 301 https://$host$request_uri;
+# }

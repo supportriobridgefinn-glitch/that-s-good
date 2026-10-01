@@ -1,0 +1,10 @@
+{
+  "name": "Rio Bridge Finance",
+  "short_name": "Rio Bridge",
+  "description": "Personal and business financing with secure account access.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#d71920",
+  "icons": [{ "src": "/favicon.png", "sizes": "64x64", "type": "image/png" }]
+}

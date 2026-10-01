@@ -1,0 +1,1161 @@
+<html lang="en-US"><head>
+<meta charset="utf-8"></head><body>﻿
+
+
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="Personal Loans, Business Loans and Flexible Financing">
+    <meta property="og:image" content="images/rio-bridge-logo.png">
+    <title>Rio Bridge Finance — Premium Global Financial Services</title>
+    <link rel="icon" type="image/png" href="images/rio-bridge-logo.png">
+
+        <!-- PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Rio Bridge Finance">
+    <meta name="theme-color" content="#1D4ED8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Rio Bridge Finance">
+    <link rel="manifest" href="/site/manifest.json">
+    <link rel="apple-touch-icon" href="images/rio-bridge-logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/rio-bridge-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/rio-bridge-logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Montserrat:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 4.7 -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary:     '#1D4ED8',
+                        royal:       '#123B7A',
+                        gold:        '#60A5FA',
+                        'gold-rich': '#93C5FD',
+                        dark:        '#151515',
+                        navy:        '#1D4ED8',
+                        'navy-dark': '#061a3a',
+                        'body-text': '#616161',
+                    },
+                    fontFamily: {
+                        sans:    ['"Open Sans"', 'sans-serif'],
+                        serif:   ['Adamina', 'serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    minHeight: {
+                        hero: '860px',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- ═══ RIO BRIDGE FINANCE — Premium Brand Override ═══ -->
+    <style>
+      :root {
+        --ng-navy: #1D4ED8;
+        --ng-royal: #123B7A;
+        --ng-gold: #60A5FA;
+        --ng-gold-rich: #93C5FD;
+        --ng-gradient-navy: linear-gradient(135deg, #1D4ED8 0%, #123B7A 100%);
+        --ng-gradient-gold: linear-gradient(135deg, #60A5FA 0%, #93C5FD 50%, #60A5FA 100%);
+        --ng-shadow-gold: 0 8px 24px -8px rgba(96,165,250,0.45);
+        --ng-shadow-elegant: 0 18px 40px -18px rgba(10,46,93,0.35);
+      }
+      /* Premium navy header surfaces */
+      header > div:first-of-type { background: var(--ng-gradient-navy) !important; }
+      header > div:nth-of-type(2) {
+        background: var(--ng-gradient-navy) !important;
+        box-shadow: 0 2px 0 rgba(96,165,250,0.55), 0 12px 32px -16px rgba(0,0,0,0.4);
+        backdrop-filter: blur(6px);
+      }
+      header > div:nth-of-type(2)::after {
+        content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px;
+        background: var(--ng-gradient-gold);
+      }
+      /* Gold hover for nav links */
+      .ng-nav-link { position: relative; transition: color .25s ease; padding-bottom: 4px; }
+      .ng-nav-link::after {
+        content: ""; position: absolute; left: 0; right: 100%; bottom: 0; height: 2px;
+        background: var(--ng-gradient-gold); transition: right .3s ease;
+      }
+      .ng-nav-link:hover { color: var(--ng-gold-rich) !important; }
+      .ng-nav-link:hover::after { right: 0; }
+      /* Premium gold CTAs */
+      .hero-btn-login, .riobridge-btn-login, .hero-btn-touch, .riobridge-btn-touch,
+      .offer-btn, .video-btn, input[type="submit"] {
+        background: var(--ng-gradient-gold) !important;
+        color: #1D4ED8 !important;
+        border: none !important;
+        font-weight: 700 !important;
+        letter-spacing: .02em;
+        box-shadow: var(--ng-shadow-gold);
+        transition: transform .2s ease, box-shadow .25s ease, filter .2s ease;
+      }
+      .hero-btn-login:hover, .riobridge-btn-login:hover, .hero-btn-touch:hover, .riobridge-btn-touch:hover,
+      .offer-btn:hover, .video-btn:hover, input[type="submit"]:hover {
+        transform: translateY(-2px); filter: brightness(1.06);
+        box-shadow: 0 14px 30px -10px rgba(96,165,250,0.55);
+      }
+      /* Section headings get a gold underline accent */
+      h1, h2 { color: var(--ng-navy); }
+      h2::after {
+        content: ""; display: block; width: 64px; height: 3px; margin-top: 14px;
+        background: var(--ng-gradient-gold); border-radius: 2px;
+      }
+      /* Cards: lift + gold border on hover */
+      .service-card, .blog-card, .riobridge-blog-card, .card, .why-tab {
+        transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        border: 1px solid rgba(10,46,93,0.08);
+      }
+      .service-card:hover, .blog-card:hover, .riobridge-blog-card:hover, .card:hover, .why-tab:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--ng-shadow-elegant);
+        border-color: var(--ng-gold);
+      }
+      /* Form fields — gold focus ring */
+      input[type="text"], input[type="email"], input[type="password"], textarea, select {
+        border: 1px solid rgba(10,46,93,0.18) !important;
+        transition: border-color .2s ease, box-shadow .2s ease;
+      }
+      input:focus, textarea:focus, select:focus {
+        outline: none !important;
+        border-color: var(--ng-gold) !important;
+        box-shadow: 0 0 0 3px rgba(96,165,250,0.18) !important;
+      }
+      input::placeholder, textarea::placeholder { color: rgba(10,46,93,0.55) !important; }
+      /* Mobile header — navy gradient + gold accent line */
+      .xl\:hidden.fixed.top-0 {
+        background: var(--ng-gradient-navy) !important;
+        border-bottom: 2px solid var(--ng-gold) !important;
+      }
+      /* Background sections previously navy — upgrade */
+      [style*="background-color: rgba(10,37,64"], [style*="background-color:#1D4ED8"], [style*="background-color: #1D4ED8"] {
+        background: var(--ng-gradient-navy) !important;
+      }
+      /* Premium tag chip beside logo */
+      .ng-brand-chip {
+        display: inline-block; margin-left: 10px; padding: 3px 10px;
+        font-size: 10px; letter-spacing: .18em; font-weight: 600;
+        color: #1D4ED8; background: var(--ng-gradient-gold);
+        border-radius: 999px; text-transform: uppercase;
+      }
+      /* Decorative gold divider utility */
+      .ng-divider { height: 2px; background: var(--ng-gradient-gold); border: 0; opacity: .85; }
+    </style>
+
+    <!-- Alpine.js (defer) -->
+    <script defer="" src="js/cdn.min.js"></script>
+
+    <style>
+        /* â”€â”€ Global reset & body â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            color: #616161;
+            margin: 0; padding: 0;
+        }
+        @media (max-width: 1279px) { body { padding-top: 100px; } }
+
+        /* â”€â”€ Alpine cloak â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        [x-cloak] { display: none !important; }
+
+        /* â”€â”€ Preloader â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        #preloader-wrapper {
+            background-color: #ffffff;
+            z-index: 10000;
+            position: fixed;
+            width: 100%; height: 100%;
+            top: 0; left: 0;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        #preloader-wrapper.loaded {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .preloader-container {
+            position: relative;
+            width: 82px; height: 82px;
+            left: 50%; top: 50%;
+            margin-top: -41px; margin-left: -41px;
+        }
+        .preloader-container > div {
+            position: relative;
+            width: 25px; height: 25px;
+            margin: 1px; float: left;
+            transform: scale(0);
+            transform-origin: center center;
+            animation: loader 2s infinite linear;
+        }
+        .preloader-container > div:nth-of-type(1),
+        .preloader-container > div:nth-of-type(5),
+        .preloader-container > div:nth-of-type(9) { animation-delay: .4s; }
+        .preloader-container > div:nth-of-type(4),
+        .preloader-container > div:nth-of-type(8) { animation-delay: .2s; }
+        .preloader-container > div:nth-of-type(2),
+        .preloader-container > div:nth-of-type(6) { animation-delay: .6s; }
+        .preloader-container > div:nth-of-type(3)  { animation-delay: .8s; }
+        @keyframes  loader {
+            0%   { transform: scale(0); }
+            40%  { transform: scale(1); }
+            80%  { transform: scale(1); }
+            100% { transform: scale(0); }
+        }
+
+        /* â”€â”€ Scroll-to-top button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        #scroll_up {
+            position: fixed;
+            z-index: 20;
+            width: 44px; height: 44px; line-height: 44px;
+            right: 0; bottom: 30px;
+            text-align: center;
+            cursor: pointer;
+            background-color: #1D4ED8;
+            color: white;
+            font-size: 20px;
+            transform: translateX(130%);
+            opacity: 0;
+            transition: transform 0.4s, opacity 0.4s;
+        }
+        #scroll_up.visible { transform: translateX(0); opacity: 1; }
+
+        /* â”€â”€ Nav link helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .ng-nav-link {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: color 0.2s;
+        }
+        .ng-nav-link-white       { color: #ffffff; }
+        .ng-nav-link-white:hover { color: #1D4ED8; }
+        .ng-nav-link-dark        { color: #404040; }
+        .ng-nav-link-dark:hover  { color: #1D4ED8; }
+
+        /* â”€â”€ Login mini-cart dropdown â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        .mini-cart-dropdown input[type="text"],
+        .mini-cart-dropdown input[type="password"] {
+            width: 100%; border: 1px solid #e5e5e5;
+            padding: 8px 12px; font-size: 13px;
+            font-family: 'Open Sans', sans-serif;
+            outline: none; display: block; margin-bottom: 8px;
+        }
+        .mini-cart-dropdown input[type="text"]:focus,
+        .mini-cart-dropdown input[type="password"]:focus { border-color: #1D4ED8; }
+        .mini-cart-dropdown input[type="submit"] {
+            width: 100%; background: linear-gradient(135deg, #60A5FA 0%, #93C5FD 50%, #93C5FD 100%); color: #1D4ED8;
+            border: none; padding: 9px;
+            font-size: 13px; font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+            cursor: pointer; transition: background 0.2s;
+        }
+        .mini-cart-dropdown input[type="submit"]:hover { background: #1E3A8A; }
+    </style>
+
+    
+
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     PRELOADER
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<div id="preloader-wrapper">
+    <div class="preloader-container">
+        <div style="background-color:#1D4ED8;"></div>
+        <div style="background-color:#1D4ED8;"></div>
+        <div style="background-color:#1D4ED8;"></div>
+        <div style="background-color:#1D4ED8;"></div>
+        <div style="background-color:#1D4ED8;"></div>
+        <div style="background-color:#1D4ED8;"></div>
+        <div style="background-color:#1D4ED8;"></div>
+        <div style="background-color:#1D4ED8;"></div>
+        <div style="background-color:#1D4ED8;"></div>
+    </div>
+</div>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     HEADER
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<header x-data="{ mobileOpen: false, aboutOpen: false, sticky: false, loginOpen: false }" @scroll.window="sticky = (window.scrollY > 100)" class="relative z-50">
+
+    <!-- â”€â”€ Top bar (desktop only) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <div class="hidden xl:block w-full h-10" style="background-color: rgba(10,37,64,1); color: rgba(255,255,255,1);">
+        <div class="max-w-[1400px] mx-auto px-6 h-full flex items-center">
+        </div>
+    </div>
+
+    <!-- â”€â”€ Desktop Main Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <div class="hidden xl:block w-full h-[128px]" style="background-color: rgba(10,37,64,0.85);">
+        <div class="max-w-[1400px] mx-auto px-6 h-full flex items-center justify-between gap-6">
+
+            <!-- Logo + tagline -->
+            <a href="/site/index.html" class="flex-shrink-0 flex items-center gap-4">
+                <img src="images/rio-bridge-logo.png" alt="Rio Bridge Finance" style="height:116px; max-height:116px; width:auto; object-fit:contain; display:block;">
+                <div style="line-height:1.1;">
+                    <div style="color:#fff;font-weight:700;font-size:22px;letter-spacing:0.4px;">RIO BRIDGE FINANCE</div>
+                    <div style="color:#60A5FA;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;">Private Lending and Loan Management</div>
+                </div>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="flex items-center gap-7 h-full">
+                <!-- Reordered: About > Personal > Home -->
+                <div class="relative h-full flex items-center" @mouseenter="aboutOpen=true" @mouseleave="aboutOpen=false">
+                    <a href="/site/about" class="ng-nav-link ng-nav-link-white ">About Us</a>
+                    <div x-show="aboutOpen" x-cloak="" x-transition:enter="transition duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute top-full left-0 bg-white shadow-lg min-w-[180px] z-50 py-2">
+                        <a href="/site/history" class="block px-5 py-2 text-[13px] font-sans text-dark hover:text-primary hover:bg-gray-50 transition-colors">Our History</a>
+                        <a href="/site/contact" class="block px-5 py-2 text-[13px] font-sans text-dark hover:text-primary hover:bg-gray-50 transition-colors">Contacts</a>
+                    </div>
+                </div>
+                <a href="/site/personal" class="ng-nav-link ng-nav-link-white ">Personal</a>
+                <a href="/site/index.html" class="ng-nav-link ng-nav-link-white text-primary">Home</a>
+                <a href="/site/business" class="ng-nav-link ng-nav-link-white ">Business</a>
+                <a href="/site/loan" class="ng-nav-link ng-nav-link-white ">Loans</a>
+            </nav>
+
+            <!-- Right actions -->
+            <div class="flex items-center gap-3 flex-shrink-0">
+
+                <!-- Login dropdown -->
+                <div class="relative h-[128px] flex items-center" @mouseenter="loginOpen=true" @mouseleave="loginOpen=false">
+                    <a href="/login" class="flex items-center gap-1.5 ng-nav-link ng-nav-link-white">
+                        <img src="images/index.png" width="20" height="20" alt="en" class="inline">
+                        Login
+                    </a>
+                    <div x-show="loginOpen" x-cloak="" x-transition:enter="transition duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" class="absolute right-0 top-full bg-white shadow-xl z-50 mini-cart-dropdown" style="min-width:240px; padding:20px;">
+
+
+                                         
+                                
+                                        <form action="/login" method="post">
+                             <input type="hidden" name="_token" value="L56I5wGd9Rv4pQOdOg8TGNWVcOePuBs0zA3ZjDxM">
+                             <input type="password" name="password" placeholder="USER PASSCODE" required="">
+                             <input type="text" name="email" placeholder="USER ID" required="">
+                             <input type="submit" value="Login">
+                         </form>
+                        <div style="text-align:center; margin-top:10px;">
+                            <a href="/login" class="ng-nav-link ng-nav-link-dark" style="font-size:12px;">Use secure login �</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="w-px h-10 bg-white/20 mx-1"></div>
+
+                <!-- Register -->
+                <a href="/site/register" class="ng-nav-link ng-nav-link-white">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- â”€â”€ Desktop Sticky Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <div x-show="sticky" x-cloak="" x-transition:enter="transition duration-300" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="fixed top-0 left-0 right-0 h-[112px] bg-white shadow-md z-[200] hidden xl:flex items-center">
+        <div class="max-w-[1400px] mx-auto px-6 w-full flex items-center justify-between gap-6">
+
+            <a href="/site/index.html" class="flex-shrink-0">
+                <img src="images/rio-bridge-logo.png" alt="Rio Bridge Finance" style="height:104px; width:auto; object-fit:contain; display:block;">
+            </a>
+
+            <nav class="flex items-center gap-7">
+                <!-- Reordered: About > Personal > Home -->
+                <div class="relative" @mouseenter="aboutOpen=true" @mouseleave="aboutOpen=false">
+                    <a href="/site/about" class="ng-nav-link ng-nav-link-dark ">About Us</a>
+                    <div x-show="aboutOpen" x-cloak="" x-transition="" class="absolute top-full left-0 bg-white shadow-lg min-w-[180px] z-50 py-2">
+                        <a href="/site/history" class="block px-5 py-2 text-[13px] font-sans text-dark hover:text-primary hover:bg-gray-50 transition-colors">Our History</a>
+                        <a href="/site/contact" class="block px-5 py-2 text-[13px] font-sans text-dark hover:text-primary hover:bg-gray-50 transition-colors">Contacts</a>
+                    </div>
+                </div>
+                <a href="/site/personal" class="ng-nav-link ng-nav-link-dark ">Personal</a>
+                <a href="/site/index.html" class="ng-nav-link ng-nav-link-dark text-primary">Home</a>
+                <a href="/site/business" class="ng-nav-link ng-nav-link-dark ">Business</a>
+                <a href="/site/loan" class="ng-nav-link ng-nav-link-dark ">Loans</a>
+            </nav>
+
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <div class="relative" @mouseenter="loginOpen=true" @mouseleave="loginOpen=false">
+                    <a href="/login" class="flex items-center gap-1.5 ng-nav-link ng-nav-link-dark">
+                        <img src="images/index.png" width="20" height="20" alt="en">
+                        Login
+                    </a>
+                    <div x-show="loginOpen" x-cloak="" x-transition="" class="absolute right-0 top-full bg-white shadow-xl z-50 mini-cart-dropdown" style="min-width:240px; padding:20px;">
+                        <form action="/site/public/myprofile/filesinc/filelog.inc.htm" method="post">
+                            <input type="hidden" name="_token" value="L56I5wGd9Rv4pQOdOg8TGNWVcOePuBs0zA3ZjDxM">
+                            <input type="password" name="pass" placeholder="USER PASSCODE" required="">
+                            <input type="text" name="acc_no" placeholder="USER ID" required="">
+                            <input type="submit" value="Login">
+                        </form>
+                        <div style="text-align:center; margin-top:10px;">
+                            <a href="/login" class="ng-nav-link ng-nav-link-dark" style="font-size:12px;">Use secure login �</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-px h-10 bg-[#404040]/15 mx-1"></div>
+                <a href="/site/register" class="ng-nav-link ng-nav-link-dark">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- â”€â”€ Mobile Fixed Header â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <div class="xl:hidden fixed top-0 left-0 right-0 h-[100px] z-[200] flex items-center justify-between px-5" style="background-color: rgba(34,35,40,1);">
+
+        <!-- Hamburger -->
+        <button @click="mobileOpen = !mobileOpen" class="flex flex-col justify-center items-center w-8 h-8 gap-1.5 focus:outline-none" aria-label="Toggle menu">
+            <span :class="mobileOpen ? 'rotate-45 translate-y-[7px]' : ''" class="block w-6 h-0.5 bg-white transition-all duration-300 origin-center"></span>
+            <span :class="mobileOpen ? 'opacity-0 scale-x-0' : ''" class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+            <span :class="mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''" class="block w-6 h-0.5 bg-white transition-all duration-300 origin-center"></span>
+        </button>
+
+        <!-- Logo centered -->
+        <a href="/site/index.html">
+            <img src="images/rio-bridge-logo.png" alt="Rio Bridge Finance" style="height:96px; width:auto; object-fit:contain; display:block;">
+        </a>
+
+        <!-- Spacer -->
+        <div class="w-8"></div>
+    </div>
+
+    <!-- â”€â”€ Mobile Nav Drawer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+    <div x-show="mobileOpen" x-cloak="" x-transition:enter="transition duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="xl:hidden fixed inset-0 z-[190] pt-[100px] overflow-y-auto" style="background-color: rgba(34,35,40,0.98);">
+        <nav class="px-6 py-6 space-y-0">
+            <!-- Reordered: About > Personal > Home -->
+            <div x-data="{ subOpen: false }">
+                <button @click="subOpen = !subOpen" class="flex items-center justify-between w-full text-white py-3 font-sans text-base border-b border-white/10 hover:text-primary transition-colors focus:outline-none">
+                    <span>About Us</span>
+                    <svg :class="subOpen ? 'rotate-180' : ''" class="w-4 h-4 transition-transform duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div x-show="subOpen" x-transition:enter="transition duration-200" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" class="pl-4 space-y-0 border-b border-white/10">
+                    <a href="/site/about" class="block text-gray-400 py-2 font-sans text-sm hover:text-primary transition-colors">About Us</a>
+                    <a href="/site/history" class="block text-gray-400 py-2 font-sans text-sm hover:text-primary transition-colors">Our History</a>
+                    <a href="/site/contact" class="block text-gray-400 py-2 font-sans text-sm hover:text-primary transition-colors">Contacts</a>
+                </div>
+            </div>
+
+            <a href="/site/personal" class="block text-white py-3 font-sans text-base border-b border-white/10 hover:text-primary transition-colors">Personal</a>
+            <a href="/site/index.html" class="block text-white py-3 font-sans text-base border-b border-white/10 hover:text-primary transition-colors">Home</a>
+            <a href="/site/business" class="block text-white py-3 font-sans text-base border-b border-white/10 hover:text-primary transition-colors">Business</a>
+            <a href="/site/loan" class="block text-white py-3 font-sans text-base border-b border-white/10 hover:text-primary transition-colors">Loans</a>
+            <a href="/login" class="block text-white py-3 font-sans text-base border-b border-white/10 hover:text-primary transition-colors">Login</a>
+            <a href="/site/register" class="block text-white py-3 font-sans text-base border-b border-white/10 hover:text-primary transition-colors">Register</a>
+            <a href="/site/contact" class="block text-white py-3 font-sans text-base hover:text-primary transition-colors">Contacts</a>
+        </nav>
+    </div>
+
+</header>
+<!-- END HEADER -->
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     PAGE CONTENT
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+
+<style>
+.hero-swiper { width:100%; height:860px; }
+@media (max-width:1024px) { .hero-swiper { height:750px; } }
+@media (max-width:768px)  { .hero-swiper { height:700px; } }
+.hero-swiper .swiper-slide { background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; }
+.hero-swiper .swiper-slide::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.35); z-index:1; }
+.riobridge-hero-content { position:relative; z-index:2; text-align:center; padding:0 20px; max-width:860px; }
+.riobridge-hero-content img.slide-icon { width:112px; height:auto; display:block; margin:0 auto 24px; }
+.riobridge-hero-content .subtitle { font-size:16px; font-weight:400; color:#fff; letter-spacing:1px; text-transform:uppercase; margin-bottom:20px; display:block; }
+.riobridge-hero-content .title { font-family:'Adamina',serif; font-size:72px; font-weight:400; line-height:1.25; color:#fff; margin-bottom:40px; }
+@media (max-width:1024px) { .riobridge-hero-content .title { font-size:46px; } }
+@media (max-width:768px)  { .riobridge-hero-content .title { font-size:34px; } }
+.hero-btns { display:flex; justify-content:center; flex-wrap:wrap; gap:16px; }
+.riobridge-btn-login { display:inline-block; min-width:170px; height:56px; line-height:56px; background:#fff; color:#1D4ED8; font-size:13px; font-weight:700; border:1px solid #fff; text-decoration:none; text-align:center; padding:0 35px; transition:background 0.3s,color 0.3s; }
+.riobridge-btn-login:hover { background:transparent; color:#fff; }
+.riobridge-btn-touch { display:inline-block; min-width:170px; height:56px; line-height:56px; background:transparent; color:#fff; font-size:13px; font-weight:700; text-transform:uppercase; border:1px solid #fff; text-decoration:none; text-align:center; padding:0 35px; transition:background 0.3s,color 0.3s; }
+.riobridge-btn-touch:hover { background:#fff; color:#1D4ED8; }
+.hero-swiper .swiper-pagination-bullet { width:8px; height:8px; background:#fff; opacity:0.6; }
+.hero-swiper .swiper-pagination-bullet-active { opacity:1; background:#1D4ED8; }
+.service-card { position:relative; overflow:hidden; min-height:220px; background-size:cover; background-position:center; display:flex; flex-direction:column; justify-content:flex-end; cursor:pointer; }
+.service-card::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.35); z-index:1; transition:background 0.3s; }
+.service-card:hover::before { background:rgba(0,0,0,0.55); }
+.service-card-content { position:relative; z-index:2; padding:20px 24px 16px; }
+.service-card-logo { position:absolute; bottom:16px; right:20px; z-index:2; }
+.service-card-logo img { max-width:60px; opacity:0.85; }
+.offer-card { position:relative; overflow:hidden; border:1px solid rgba(255,255,255,0.3); padding:28px 24px 24px; min-height:260px; display:flex; flex-direction:column; cursor:default; transition:border-color 0.3s; }
+.offer-card:hover { border-color:rgba(255,255,255,0.6); }
+.offer-card-bg { position:absolute; inset:0; background-size:cover; background-position:center; transform:translateX(100%); transition:transform 0.5s ease; z-index:0; }
+.offer-card-overlay { position:absolute; inset:0; background:rgba(62,78,131,0.80); transform:translateX(100%); transition:transform 0.5s ease; z-index:1; }
+.offer-card:hover .offer-card-bg,.offer-card:hover .offer-card-overlay { transform:translateX(0); }
+.offer-card-body { position:relative; z-index:2; display:flex; flex-direction:column; height:100%; }
+.offer-btn { display:inline-block; border:1px solid #fff; color:#fff; font-size:12px; font-weight:700; letter-spacing:1px; padding:8px 24px; text-decoration:none; opacity:0; transform:translateY(6px); transition:opacity 0.3s 0.1s,transform 0.3s 0.1s,background 0.2s,color 0.2s; }
+.offer-card:hover .offer-btn { opacity:1; transform:translateY(0); }
+.offer-btn:hover { background:#fff; color:#1D4ED8; }
+.why-tab { cursor:pointer; padding:10px 20px; border:1px solid #e5e5e5; font-size:13px; color:#616161; transition:all 0.2s; }
+.why-tab.active,.why-tab:hover { background:#1D4ED8; color:#fff; border-color:#1D4ED8; }
+.team-swiper .swiper-pagination-bullet { background:#1D4ED8; opacity:0.4; }
+.team-swiper .swiper-pagination-bullet-active { opacity:1; }
+.team-item { text-align:center; padding-bottom:30px; }
+.team-item .team-image img { width:100%; height:auto; display:block; }
+.team-item .team-title a { font-size:16px; font-weight:600; color:#151515; text-decoration:none; }
+.team-item .team-title a:hover { color:#1D4ED8; }
+.team-item .team-department { font-size:13px; color:#616161; margin:4px 0 10px; }
+.team-item .team-icon { color:#616161; font-size:13px; margin:0 5px; transition:color 0.2s; }
+.team-item .team-icon:hover { color:#1D4ED8; }
+.cta-section { background-size:cover; background-position:center; background-attachment:fixed; position:relative; }
+.cta-section::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.55); }
+.video-btn { position:relative; display:inline-flex; align-items:center; justify-content:center; width:80px; height:80px; border-radius:50%; border:2px solid #1D4ED8; color:#fff; font-size:28px; text-decoration:none; box-shadow:0 5px 20px 7px rgba(193,14,14,0.25); animation:pulse-video 2s ease infinite; }
+.video-btn:hover { background:rgba(193,14,14,0.2); }
+@keyframes  pulse-video { 0% { box-shadow:0 0 0 0 rgba(193,14,14,0.4); } 70% { box-shadow:0 0 0 20px rgba(193,14,14,0); } 100% { box-shadow:0 0 0 0 rgba(193,14,14,0); } }
+.testimonials-swiper .swiper-pagination-bullet { background:#1D4ED8; opacity:0.4; }
+.testimonials-swiper .swiper-pagination-bullet-active { opacity:1; }
+.testimonial-item { padding:24px; background:#fff; box-shadow:0 2px 12px rgba(0,0,0,0.07); }
+.testimonial-item .t-meta { display:flex; align-items:center; gap:16px; margin-bottom:14px; }
+.testimonial-item .t-meta img { width:60px; height:60px; object-fit:cover; border-radius:50%; }
+.testimonial-item .t-name { font-size:15px; font-weight:700; color:#151515; }
+.testimonial-item .t-role { font-size:12px; color:#616161; }
+.testimonial-item .t-quote { font-size:14px; line-height:26px; color:#616161; }
+.portfolio-item { position:relative; overflow:hidden; cursor:pointer; }
+.portfolio-item img { width:100%; height:220px; object-fit:cover; display:block; transition:transform 0.5s ease; }
+.portfolio-item:hover img { transform:scale(1.06); }
+.portfolio-overlay { position:absolute; inset:0; background:rgba(62,78,131,0.82); opacity:0; transition:opacity 0.3s; display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-end; padding:20px; }
+.portfolio-item:hover .portfolio-overlay { opacity:1; }
+.portfolio-overlay h4 { font-size:14px; font-weight:700; color:#fff; margin:0 0 4px; }
+.portfolio-overlay span { font-size:12px; color:rgba(255,255,255,0.7); }
+.riobridge-blog-card .blog-date { font-size:13px; color:#616161; margin-bottom:10px; }
+.riobridge-blog-card .blog-date span { font-size:22px; font-weight:700; color:#151515; display:block; line-height:1; }
+.riobridge-blog-card img { width:100%; height:220px; object-fit:cover; display:block; transition:opacity 0.3s; }
+.riobridge-blog-card img:hover { opacity:0.85; }
+.riobridge-blog-card .blog-cats a { font-size:11px; color:#1D4ED8; text-decoration:none; text-transform:uppercase; font-weight:600; margin-right:8px; }
+.riobridge-blog-card .blog-title a { font-size:17px; font-weight:700; color:#151515; text-decoration:none; line-height:1.4; transition:color 0.2s; }
+.riobridge-blog-card .blog-title a:hover { color:#1D4ED8; }
+@keyframes  slideInLeft { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:translateX(0); } }
+</style>
+
+<div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('images/slider.jpg');">
+            <div class="riobridge-hero-content">
+                <img class="slide-icon" src="images/slider-logo.png" alt="">
+                <span class="subtitle">We Deliver Enduring Results</span>
+                <h1 class="title">Making Your Business Ideas Come True</h1>
+                <div class="hero-btns">
+                    <a href="/login" class="riobridge-btn-login">LOGIN</a>
+                    <a href="/site/contact" class="riobridge-btn-touch">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url('images/slider-22.jpg');">
+            <div class="riobridge-hero-content">
+                <img class="slide-icon" src="images/awwards-1.png" alt="">
+                <span class="subtitle">Build Your Business with Professionals!</span>
+                <h1 class="title">Best Loan Services from Experts</h1>
+                <div class="hero-btns">
+                    <a href="/login" class="riobridge-btn-login">LOGIN</a>
+                    <a href="/site/contact" class="riobridge-btn-touch">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url('images/slide-33.jpg');">
+            <div class="riobridge-hero-content">
+                <img class="slide-icon" src="images/awwards-3.png" alt="">
+                <span class="subtitle">Passion for Partnering with New Business Ideas</span>
+                <h1 class="title">We Help Achieve Your Biggest Goals</h1>
+                <div class="hero-btns">
+                    <a href="/login" class="riobridge-btn-login">LOGIN</a>
+                    <a href="/site/contact" class="riobridge-btn-touch">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<section class="w-full">
+    <div class="grid grid-cols-1 md:grid-cols-3">
+        <a href="/site/services" class="service-card block" style="background-image:url('images/services2-bg_1.png'); background-color:#1D4ED8;">
+            <div class="service-card-content"><div class="text-white font-sans text-sm mb-1">Personal & Business</div><h3 class="font-sans font-bold text-2xl" style="color:#1D4ED8;">Loans</h3></div>
+            <div class="service-card-logo"><img src="images/services2-bg_1.png" alt=""></div>
+        </a>
+        <a href="/site/services" class="service-card block" style="background-image:url('images/services2-bg_2.png'); background-color:#2a3a6a;">
+            <div class="service-card-content"><div class="text-white font-sans text-sm mb-1">Loans &</div><h3 class="font-sans font-bold text-2xl text-white">Loans</h3></div>
+            <div class="service-card-logo"><img src="images/services2-bg_2.png" alt=""></div>
+        </a>
+        <div class="service-card" style="background-image:url('images/services2-bg_3.png'); background-color:#e8e8e8;">
+            <div class="service-card-content"><div class="font-sans text-sm mb-1" style="color:#151515;">Online Loan Management</div><h3 class="font-sans font-bold text-2xl" style="color:#1D4ED8;">Loans</h3></div>
+            <div class="service-card-logo"><img src="images/services2-bg_3.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<section class="max-w-[1400px] mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <div class="font-display font-semibold text-primary text-sm uppercase tracking-wider mb-3">About Us</div>
+            <h2 class="font-serif text-4xl text-dark leading-tight mb-6">We Deliver Excellent Loan Services</h2>
+            <p class="font-sans text-body-text text-base leading-8 mb-5">Rio Bridge Finance is an international loan provider serving clients across the United States, Italy, China, Mexico and Switzerland. We assist leaders who are change-oriented in improving their decision-making, turning those decisions into actions, and achieving the long-term success they seek.</p>
+            <p class="font-sans text-body-text text-base leading-8 mb-5">We provide strategic, marketing, and organizational advice to world leaders on their most important problems and opportunities.</p>
+            <hr style="border-color:#e5e5e5;">
+        </div>
+        <div class="flex justify-center lg:justify-end">
+            <img src="images/slice-2.png" alt="About" class="max-w-full h-auto" style="animation:slideInLeft 0.9s ease-out both;">
+        </div>
+    </div>
+</section>
+
+<section style="background-image:url('images/bg-services46ee46ee46ee.jpg'); background-size:cover; background-position:center;" class="w-full py-16 px-6">
+    <div class="max-w-[1400px] mx-auto">
+        <div class="mb-10">
+            <div class="font-display font-semibold text-primary text-sm uppercase tracking-wider mb-3">Our Services</div>
+            <h2 class="font-serif text-white text-4xl font-normal leading-tight mb-5">What We Offer for You</h2>
+            <p class="font-sans max-w-2xl" style="color:#bebebe;">Across all sectors and regions, our loan services concentrate on the most important problems and prospects for our clients: strategy, marketing, organization, operations, technology, transformation, digital, advanced analytics, corporate finance, mergers & acquisitions and sustainability.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="offer-card">
+                <div class="offer-card-bg" style="background-image:url('images/video_bg-1.jpg');"></div>
+                <div class="offer-card-overlay"></div>
+                <div class="offer-card-body">
+                    <div class="mb-4"><i class="fa fa-pie-chart text-white text-4xl"></i></div>
+                    <h5 class="text-white font-sans font-semibold text-lg mb-3">Personal Loans</h5>
+                    <p class="font-sans text-sm flex-1" style="color:#bebebe;">Rio Bridge Finance provides a range of choices for your unique financial circumstances, from spending to saving.</p>
+                    <div class="mt-5"><a href="/login" class="offer-btn">LOGIN</a></div>
+                </div>
+            </div>
+            <div class="offer-card">
+                <div class="offer-card-bg" style="background-image:url('images/slider-22.jpg');"></div>
+                <div class="offer-card-overlay"></div>
+                <div class="offer-card-body">
+                    <div class="mb-4"><i class="fa fa-line-chart text-white text-4xl"></i></div>
+                    <h5 class="text-white font-sans font-semibold text-lg mb-3">Business Loans</h5>
+                    <p class="font-sans text-sm flex-1" style="color:#bebebe;">We value your business, no matter how big or small it is. Allow Rio Bridge Finance to assist you in achieving success.</p>
+                    <div class="mt-5"><a href="/login" class="offer-btn">LOGIN</a></div>
+                </div>
+            </div>
+            <div class="offer-card">
+                <div class="offer-card-bg" style="background-image:url('images/slide-33.jpg');"></div>
+                <div class="offer-card-overlay"></div>
+                <div class="offer-card-body">
+                    <div class="mb-4"><i class="fa fa-credit-card text-white text-4xl"></i></div>
+                    <h5 class="text-white font-sans font-semibold text-lg mb-3">Digital Loan Services</h5>
+                    <p class="font-sans text-sm flex-1" style="color:#bebebe;">You are guaranteed security when using any of our digital loan products, including online applications and loan management.</p>
+                    <div class="mt-5"><a href="/login" class="offer-btn">LOGIN</a></div>
+                </div>
+            </div>
+            <div class="offer-card">
+                <div class="offer-card-bg" style="background-image:url('images/slider.jpg');"></div>
+                <div class="offer-card-overlay"></div>
+                <div class="offer-card-body">
+                    <div class="mb-4"><i class="fa fa-home text-white text-4xl"></i></div>
+                    <h5 class="text-white font-sans font-semibold text-lg mb-3">Loans</h5>
+                    <p class="font-sans text-sm flex-1" style="color:#bebebe;">We provide a range of loan products that we have developed with your needs in mind.</p>
+                    <div class="mt-5"><a href="/login" class="offer-btn">LOGIN</a></div>
+                </div>
+            </div>
+            <div class="offer-card">
+                <div class="offer-card-bg" style="background-image:url('images/video_bg-1.jpg');"></div>
+                <div class="offer-card-overlay"></div>
+                <div class="offer-card-body">
+                    <div class="mb-4"><i class="fa fa-lock text-white text-4xl"></i></div>
+                    <h5 class="text-white font-sans font-semibold text-lg mb-3">Private Lending</h5>
+                    <p class="font-sans text-sm flex-1" style="color:#bebebe;">Our private lending platform is made to provide the safest and easiest approach to handle personal money.</p>
+                    <div class="mt-5"><a href="/login" class="offer-btn">LOGIN</a></div>
+                </div>
+            </div>
+            <div class="offer-card">
+                <div class="offer-card-bg" style="background-image:url('images/slider-22.jpg');"></div>
+                <div class="offer-card-overlay"></div>
+                <div class="offer-card-body">
+                    <div class="mb-4"><i class="fa fa-money text-white text-4xl"></i></div>
+                    <h5 class="text-white font-sans font-semibold text-lg mb-3">Loans</h5>
+                    <p class="font-sans text-sm flex-1" style="color:#bebebe;">At Rio Bridge Finance, we work hard to provide you with flexible financing so you can reach your financial objectives.</p>
+                    <div class="mt-5"><a href="/login" class="offer-btn">LOGIN</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-full py-20 px-6">
+    <div class="max-w-[1400px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="hidden lg:flex justify-center">
+                <img src="images/man-smile.png" alt="Why Choose Us" class="max-w-xs xl:max-w-sm h-auto">
+            </div>
+            <div x-data="{ activeTab: 'commitment' }">
+                <div class="font-display font-semibold text-primary text-sm uppercase tracking-wider mb-3">Our Strategy</div>
+                <h2 class="font-serif text-dark text-4xl font-normal leading-tight mb-5">Why Should You Choose Us?</h2>
+                <p class="font-sans text-body-text mb-6">We are a neighborhood community lender that has been meeting the needs of our neighbors since 1986.</p>
+                <div class="flex flex-wrap gap-0 mb-5">
+                    <button @click="activeTab = 'commitment'" :class="activeTab === 'commitment' ? 'active' : ''" class="why-tab">Commitment</button>
+                    <button @click="activeTab = 'convenience'" :class="activeTab === 'convenience' ? 'active' : ''" class="why-tab">Convenience</button>
+                    <button @click="activeTab = 'community'" :class="activeTab === 'community' ? 'active' : ''" class="why-tab">Community</button>
+                </div>
+                <div class="border border-[#e5e5e5] p-6 font-sans text-body-text leading-7 min-h-[90px]">
+                    <p x-show="activeTab === 'commitment'" x-transition="">The greatest service is offered to people and businesses by our dedicated staff. Our work is the product of more than 20 years of experience and 5,700 specialists.</p>
+                    <p x-show="activeTab === 'convenience'" x-cloak="" x-transition="">Throughout the United Kingdom, Rio Bridge Finance offers 12 locations to make loan servicing convenient for our many customers around-the-clock.</p>
+                    <p x-show="activeTab === 'community'" x-cloak="" x-transition="">To support local businesses and residents, Rio Bridge Finance makes investments in their communities. Our communities and the people who live there, who directly experience our investments, are the focus of our corporate responsibility.</p>
+                </div>
+                <div class="flex items-center gap-6 mt-8">
+                    <img src="images/awwards-1.png" alt="Award" style="width:80px;height:auto;">
+                    <img src="images/awwards-2.png" alt="Award" style="width:80px;height:auto;">
+                    <img src="images/awwards-3.png" alt="Award" style="width:80px;height:auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-full py-20 px-6" style="background-color:#f9f9f9;">
+    <div class="max-w-[1400px] mx-auto">
+        <div class="text-center mb-12">
+            <div class="font-display font-semibold text-primary text-sm uppercase tracking-wider mb-3">Our Consultants</div>
+            <h2 class="font-serif text-dark text-4xl font-normal leading-tight mb-4">Meet Our Leadership Team</h2>
+        </div>
+        <div class="swiper team-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="team-item"><div class="team-image"><img src="images/staff-2.jpg" alt="Marco Bellini"></div><div class="team-item_info mt-4"><h4 class="team-title"><a href="#">Marco Bellini</a></h4><div class="team-department">Executive Director, Milan</div><div><a href="#" class="team-icon fa fa-twitter"></a><a href="#" class="team-icon fa fa-facebook"></a><a href="#" class="team-icon fa fa-linkedin"></a><a href="#" class="team-icon fa fa-instagram"></a></div></div></div></div>
+                <div class="swiper-slide"><div class="team-item"><div class="team-image"><img src="images/staff-1.jpg" alt="Daniel Reyes"></div><div class="team-item_info mt-4"><h4 class="team-title"><a href="#">Daniel Reyes</a></h4><div class="team-department">Marketing Manager, Chihuahua</div><div><a href="#" class="team-icon fa fa-twitter"></a><a href="#" class="team-icon fa fa-facebook"></a><a href="#" class="team-icon fa fa-linkedin"></a><a href="#" class="team-icon fa fa-instagram"></a></div></div></div></div>
+                <div class="swiper-slide"><div class="team-item"><div class="team-image"><img src="images/staff-3.jpg" alt="Lukas Brunner"></div><div class="team-item_info mt-4"><h4 class="team-title"><a href="#">Lukas Brunner</a></h4><div class="team-department">Finance Manager, Z&uuml;rich</div><div><a href="#" class="team-icon fa fa-twitter"></a><a href="#" class="team-icon fa fa-facebook"></a><a href="#" class="team-icon fa fa-linkedin"></a><a href="#" class="team-icon fa fa-instagram"></a></div></div></div></div>
+                <div class="swiper-slide"><div class="team-item"><div class="team-image"><img src="images/staff-4.jpg" alt="Angela Kwong"></div><div class="team-item_info mt-4"><h4 class="team-title"><a href="#">Angela Kwong</a></h4><div class="team-department">Client Relations Manager, Shanghai</div><div><a href="#" class="team-icon fa fa-twitter"></a><a href="#" class="team-icon fa fa-facebook"></a><a href="#" class="team-icon fa fa-linkedin"></a><a href="#" class="team-icon fa fa-instagram"></a></div></div></div></div>
+                <div class="swiper-slide"><div class="team-item"><div class="team-image"><img src="images/staff-5.jpg" alt="Jameson Wood"></div><div class="team-item_info mt-4"><h4 class="team-title"><a href="#">Jameson Wood</a></h4><div class="team-department">HR Manager, New York</div><div><a href="#" class="team-icon fa fa-twitter"></a><a href="#" class="team-icon fa fa-facebook"></a><a href="#" class="team-icon fa fa-linkedin"></a><a href="#" class="team-icon fa fa-instagram"></a></div></div></div></div>
+            </div>
+            <div class="swiper-pagination" style="margin-top:20px; position:relative;"></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section py-24 px-6 text-center" style="background-image:url('images/video_bg-1.jpg');">
+    <div class="max-w-[900px] mx-auto relative z-10">
+        <p class="font-display font-semibold uppercase text-[#dfdfdf] text-sm tracking-widest mb-3">Stay Connected With Us</p>
+        <h3 class="font-sans font-semibold text-white text-4xl md:text-5xl leading-tight mb-10">We Work with You to Address Your Most Critical Business Priorities</h3>
+        <a href="https://www.youtube.com/watch?v=l-epKcOA7RQ" target="_blank" rel="noopener" class="video-btn" aria-label="Watch video"><i class="fa fa-play" style="margin-left:4px;"></i></a>
+    </div>
+</section>
+
+<section class="hidden md:block w-full px-6 py-0">
+    <div class="max-w-[1400px] mx-auto text-center">
+        <img src="images/iphone.png" alt="Rio Bridge Finance Mobile App" class="max-w-full mx-auto" style="max-width:970px;width:100%;">
+    </div>
+</section>
+
+<section class="py-20 px-6" style="background-image:url('images/section_05.png'); background-size:cover;">
+    <div class="max-w-[1400px] mx-auto">
+        <div class="text-center mb-12">
+            <div class="font-display font-semibold text-primary text-sm uppercase tracking-wider mb-3">Client Testimonials</div>
+            <h2 class="font-serif text-dark text-4xl font-normal leading-tight">What People Say About Us</h2>
+        </div>
+        <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="testimonial-item"><div class="t-meta"><img src="images/client-1.jpg" alt="Lilly Piper"><div><div class="t-name">Lilly Piper</div><div class="t-role">Web Designer</div></div></div><p class="t-quote">Because Rio Bridge Finance offers online loan services, my experience with them has been quite pleasant. Paying payments and transferring money can be the simplest things I've ever had to do.</p></div></div>
+                <div class="swiper-slide"><div class="testimonial-item"><div class="t-meta"><img src="images/client-2.jpg" alt="Monika May"><div><div class="t-name">Monika May</div><div class="t-role">Top Manager</div></div></div><p class="t-quote">Traditional shops are having a particularly difficult time right now. Rio Bridge Finance. Voice, mobile, and web loan services choices have completely changed the regulations.</p></div></div>
+                <div class="swiper-slide"><div class="testimonial-item"><div class="t-meta"><img src="images/client-3.jpg" alt="Rob Morison"><div><div class="t-name">Rob Morison</div><div class="t-role">CEO of Company</div></div></div><p class="t-quote">Consumers increasingly anticipate a smooth transition between digital and physical platforms. Rio Bridge Finance has made it simple.</p></div></div>
+                <div class="swiper-slide"><div class="testimonial-item"><div class="t-meta"><img src="images/client-4.jpg" alt="Ron Dunkan"><div><div class="t-name">Ron Dunkan</div><div class="t-role">Engineer</div></div></div><p class="t-quote">For many years, Rio Bridge Finance Advisors has been a highly esteemed and reliable counsel to our organization.</p></div></div>
+            </div>
+            <div class="swiper-pagination" style="margin-top:28px; position:relative;"></div>
+        </div>
+    </div>
+</section>
+
+<section class="w-full">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        <div class="portfolio-item"><img src="images/portfolio_01-1170x1170.jpg" alt="Business Meeting 2018"><div class="portfolio-overlay"><h4>Business Meeting 2018</h4><span>Corporate</span></div></div>
+        <div class="portfolio-item"><img src="images/portfolio_13-1170x1170.jpg" alt="Corporate Marketing"><div class="portfolio-overlay"><h4>Corporate Marketing</h4><span>Marketing</span></div></div>
+        <div class="portfolio-item"><img src="images/portfolio_14-1170x1170.jpg" alt="Loan Advice"><div class="portfolio-overlay"><h4>Loan Advice</h4><span>Finance</span></div></div>
+        <div class="portfolio-item"><img src="images/portfolio_04-1170x1170.jpg" alt="Corporate Audit"><div class="portfolio-overlay"><h4>Corporate Audit</h4><span>Finance</span></div></div>
+        <div class="portfolio-item"><img src="images/portfolio_05-1170x1170.jpg" alt="Business Planning"><div class="portfolio-overlay"><h4>Business Planning</h4><span>Strategy</span></div></div>
+    </div>
+</section>
+
+<section class="w-full py-8 px-6 border-y border-gray-200">
+    <div class="max-w-[1400px] mx-auto">
+        <div class="swiper clients-swiper">
+            <div class="swiper-wrapper items-center">
+                <div class="swiper-slide flex justify-center"><img src="images/client_5_solana_240x136.png" alt="Solana" class="max-w-[160px] h-auto grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100"></div>
+                <div class="swiper-slide flex justify-center"><img src="images/client_4_deters_240x136.png" alt="Deters" class="max-w-[160px] h-auto grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100"></div>
+                <div class="swiper-slide flex justify-center"><img src="images/client_3_okta_240x136.png" alt="Okta" class="max-w-[160px] h-auto grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100"></div>
+                <div class="swiper-slide flex justify-center"><img src="images/client_2_visla_240x136.png" alt="Visla" class="max-w-[160px] h-auto grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100"></div>
+                <div class="swiper-slide flex justify-center"><img src="images/client_6_cube_240x136.png" alt="Cube" class="max-w-[160px] h-auto grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100"></div>
+                <div class="swiper-slide flex justify-center"><img src="images/client_7_vetrov_240x136.png" alt="Vetrov" class="max-w-[160px] h-auto grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="max-w-[1400px] mx-auto px-6 py-20">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="riobridge-blog-card"><div class="blog-date"><span>31</span> October</div><a href="#"><img src="images/insight-1.jpg" alt="Delivering What Consumers Really Value"></a><div class="mt-4"><div class="blog-cats mb-2"><a href="#">marketing</a><a href="#">strategy</a></div><h4 class="blog-title"><a href="#">Delivering What Consumers Really Value</a></h4></div></article>
+        <article class="riobridge-blog-card"><div class="blog-date"><span>31</span> October</div><a href="#"><img src="images/insight-2.jpg" alt="Digital Procurement"></a><div class="mt-4"><div class="blog-cats mb-2"><a href="#">marketing</a><a href="#">strategy</a></div><h4 class="blog-title"><a href="#">Digital Procurement: The Benefits Go Far Beyond</a></h4></div></article>
+        <article class="riobridge-blog-card"><div class="blog-date"><span>31</span> October</div><a href="#"><img src="images/insight-3.jpg" alt="Customers Know What They Want"></a><div class="mt-4"><div class="blog-cats mb-2"><a href="#">marketing</a><a href="#">strategy</a></div><h4 class="blog-title"><a href="#">Customers Know What They Want Are Insurers</a></h4></div></article>
+    </div>
+</section>
+
+
+<!-- Pre-footer secure lending strip -->
+<section class="riobridge-secure-strip" style="background:linear-gradient(135deg,#60A5FA 0%,#93C5FD 50%,#93C5FD 100%);padding:28px 0;text-align:center;">
+    <div class="max-w-[1100px] mx-auto px-6">
+        <h3 style="color:#1D4ED8;font-weight:700;font-size:20px;margin-bottom:6px;">Rio Bridge Finance &mdash; Secure Lending, Simplified.</h3>
+        <p style="color:#1E3A8A;font-size:14px;margin:0;">Trusted financial services with enterprise-grade encryption, 24/7 monitoring, and global reach.</p>
+    </div>
+</section>
+
+<!-- FOOTER (2-column layout) -->
+<footer style="background-color:#1D4ED8;" id="footer">
+    <div class="max-w-[1400px] mx-auto px-6 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+                <a href="/site/index.html">
+                    <img src="images/rio-bridge-logo.png" alt="Rio Bridge Finance" style="width:185px; object-fit:contain;" class="mb-5">
+                </a>
+                <h6 class="text-white font-sans font-semibold mb-4">About</h6>
+                <p class="font-sans text-[13px] leading-6" style="color:#a3a3a3;">
+                    Rio Bridge Finance delivers personal and business loans, lending, and digital financing services worldwide &mdash; built around security, transparency, and enduring client results.
+                </p>
+                <div class="flex flex-wrap gap-0 mt-5">
+                    <a href="https://twitter.com/" target="_blank" rel="noopener" class="fa fa-twitter text-white hover:text-primary text-sm transition-colors" style="margin:0 15px 15px 0;" title="Twitter"></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="fa fa-facebook text-white hover:text-primary text-sm transition-colors" style="margin:0 15px 15px 0;" title="Facebook"></a>
+                    <a href="#" target="_blank" rel="noopener" class="fa fa-linkedin text-white hover:text-primary text-sm transition-colors" style="margin:0 15px 15px 0;" title="LinkedIn"></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="fa fa-instagram text-white hover:text-primary text-sm transition-colors" style="margin:0 15px 15px 0;" title="Instagram"></a>
+                </div>
+            </div>
+            <div>
+                <h6 class="text-white font-sans font-semibold mb-4">Contact</h6>
+                <p class="font-sans text-[13px] leading-6 mb-3">
+                    <span class="text-white font-semibold">Global Offices:</span><br>
+                    <span style="color:#a3a3a3;">Dreib&uuml;ndenstrasse 56, Daillens, Switzerland. 1340</span><br>
+                    <span style="color:#a3a3a3;">Mercy School Institute, 1000 Mercy Dr, El Paso, Texas 79912, USA</span><br>
+                    <span style="color:#a3a3a3;">1450 Brickell Ave, Suite 2300, Miami, FL 33131, USA</span><br>
+                    <span style="color:#a3a3a3;">350 Fifth Avenue, 21st Floor, New York, NY 10118, USA</span><br>
+                    <span style="color:#a3a3a3;">Av. Tecnol&oacute;gico 2905, Col. Quintas del Sol, Chihuahua, Chih. 31214, Mexico</span><br><span style="color:#a3a3a3;">Via Monte Napoleone 8, 20121 Milano, Italy</span><br><span style="color:#a3a3a3;">Shanghai Tower, 501 Yincheng Middle Rd, Pudong, Shanghai 200120, China</span>
+                </p>
+                <p class="font-sans text-[13px] mb-3">
+                    <span class="text-white font-semibold">Email:</span>
+                    <a href="mailto:support@riobridgefinance.com" style="color:#a3a3a3;" class="hover:text-white transition-colors"> support@riobridgefinance.com</a>
+                </p>
+                <p class="font-sans text-[13px] mb-3">
+                    <span class="text-white font-semibold">WhatsApp:</span>
+                    <a href="https://wa.me/13347808338?text=Hello%20Rio%20Bridge%20Finance%20admin%2C" target="_blank" rel="noopener" style="color:#a3a3a3;" class="hover:text-white transition-colors"> +1 (334) 780-8338 · Message support on WhatsApp</a>
+                </p>
+
+                <p class="font-sans text-[13px] mb-3">
+                    <span class="text-white font-semibold">Regional lines:</span><br>
+                    <span style="color:#a3a3a3;">USA +1 (305) 704-2180</span><br>
+                    <span style="color:#a3a3a3;">Italy +39 02 3056 1420</span><br>
+                    <span style="color:#a3a3a3;">China +86 21 6061 3380</span><br>
+                    <span style="color:#a3a3a3;">Mexico +52 614 421 7790</span><br>
+                    <span style="color:#a3a3a3;">Switzerland +41 21 588 0140</span>
+                </p>
+                <p class="font-sans text-[13px] mb-3" style="color:#a3a3a3;">
+                    <span class="text-white font-semibold">Languages:</span> EN &middot; IT &middot; ZH &middot; ES &middot; DE<br>
+                    <span class="text-white font-semibold">Currencies:</span> USD &middot; EUR &middot; CNY &middot; MXN &middot; CHF
+                </p>
+                <ul class="space-y-2 font-sans text-[13px] mt-4">
+                    <li><a href="/site/contact" style="color:#a3a3a3;" class="hover:text-white transition-colors">Contact Form</a></li>
+                    <li><a href="/login" style="color:#a3a3a3;" class="hover:text-white transition-colors">Sign In</a></li>
+                    <li><a href="/site/register" style="color:#a3a3a3;" class="hover:text-white transition-colors">Open an Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:#1E3A8A;">
+        <div class="max-w-[1400px] mx-auto px-6 py-2.5">
+            <p class="text-white font-sans text-sm">Copyright &copy; <span id="nx-year" style="cursor:default;user-select:none;">2026</span> Rio Bridge Finance. All Rights Reserved</p>
+        </div>
+        <script>
+        (function(){
+          var el = document.getElementById('nx-year');
+          if (!el) return;
+          var taps = 0, timer = null;
+          el.addEventListener('click', function(){
+            taps++;
+            if (timer) clearTimeout(timer);
+            timer = setTimeout(function(){ taps = 0; }, 800);
+            if (taps >= 2) {
+              taps = 0;
+              var pw = window.prompt('Admin passphrase');
+              if (pw && window.parent) {
+                window.parent.location.href = '/admin/gate?k=' + encodeURIComponent(pw);
+              }
+            }
+          });
+        })();
+        </script>
+    </div>
+</footer>
+
+<!-- â”€â”€ Scroll-to-top button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<a href="#" id="scroll_up" aria-label="Scroll to top">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SCRIPTS
+     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+
+<!-- Swiper JS -->
+<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/swiper-bundle.min.js"></script>
+
+<!-- Preloader hide on page load (minimum 900ms so it is always visible) -->
+<script>
+(function () {
+    var startTime  = Date.now();
+    var minDisplay = 900;
+    function hidePreloader() {
+        var el = document.getElementById('preloader-wrapper');
+        if (el) el.classList.add('loaded');
+    }
+    window.addEventListener('load', function () {
+        var elapsed   = Date.now() - startTime;
+        var remaining = minDisplay - elapsed;
+        if (remaining > 0) { setTimeout(hidePreloader, remaining); }
+        else { hidePreloader(); }
+    });
+})();
+</script>
+
+<!-- Scroll-to-top visibility -->
+<script>
+(function () {
+    var btn = document.getElementById('scroll_up');
+    if (!btn) return;
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 400) btn.classList.add('visible');
+        else btn.classList.remove('visible');
+    });
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+})();
+</script>
+
+<!-- Page-specific scripts -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.hero-swiper', {
+        loop: true, effect: 'fade',
+        autoplay: { delay: 9000, disableOnInteraction: false },
+        pagination: { el: '.hero-swiper .swiper-pagination', clickable: true },
+        speed: 800,
+    });
+    new Swiper('.team-swiper', {
+        slidesPerView: 1, spaceBetween: 30,
+        pagination: { el: '.team-swiper .swiper-pagination', clickable: true },
+        breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+    });
+    new Swiper('.testimonials-swiper', {
+        slidesPerView: 1, spaceBetween: 24, loop: true,
+        pagination: { el: '.testimonials-swiper .swiper-pagination', clickable: true },
+        breakpoints: { 800: { slidesPerView: 2 }, 1200: { slidesPerView: 3 } }
+    });
+    new Swiper('.clients-swiper', {
+        slidesPerView: 2, spaceBetween: 20, loop: true,
+        autoplay: { delay: 3000, disableOnInteraction: false },
+        breakpoints: { 480: { slidesPerView: 3 }, 800: { slidesPerView: 4 }, 1025: { slidesPerView: 6 } }
+    });
+});
+</script>
+
+<!-- PWA Service Worker Registration & Install Prompt -->
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/site/sw.js')
+                .then(reg => console.log('[PWA] SW registered:', reg.scope))
+                .catch(err => console.error('[PWA] SW registration failed:', err));
+        });
+    }
+
+    let deferredPrompt;
+    let installPromptShown = sessionStorage.getItem('pwa-install-prompted');
+
+    // REMOVED for Google Safety: auto-firing PWA install popup on page load.
+    // window.addEventListener('beforeinstallprompt', (e) => {
+    //     e.preventDefault();
+    //     deferredPrompt = e;
+    //     if (!installPromptShown) { showInstallPromotion(); }
+    // });
+
+    function showInstallPromotion() {
+        const banner = document.createElement('div');
+        banner.id = 'pwa-install-banner';
+        banner.innerHTML = `
+            <div style="position:fixed;bottom:20px;right:20px;max-width:350px;background:linear-gradient(135deg,#1D4ED8 0%,#172554 100%);color:white;padding:20px;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,0.3);z-index:9999;animation:slideUp 0.5s ease;">
+                <div style="display:flex;align-items:start;gap:15px;">
+                    <img src="/site/storage/photos/TuD4llEle4VwyY9e1xDPisAFrDoDVUyS5Ii3wP0t.png" alt="App Icon" style="width:48px;height:48px;border-radius:12px;">
+                    <div style="flex:1;">
+                        <h3 style="margin:0 0 8px 0;font-size:16px;font-weight:600;">Install Rio Bridge Finance</h3>
+                        <p style="margin:0 0 12px 0;font-size:13px;opacity:0.9;line-height:1.4;">Get quick access from your home screen. Works offline!</p>
+                        <div style="display:flex;gap:10px;">
+                            <button onclick="installPWA()" style="flex:1;background:#ffffff;color:#1D4ED8;border:none;padding:10px;border-radius:8px;font-weight:600;cursor:pointer;font-size:13px;">Install</button>
+                            <button onclick="dismissInstallPrompt()" style="background:rgba(255,255,255,0.2);color:white;border:none;padding:10px 15px;border-radius:8px;cursor:pointer;font-size:13px;">Not Now</button>
+                        </div>
+                    </div>
+                    <button onclick="dismissInstallPrompt()" style="background:none;border:none;color:white;cursor:pointer;font-size:20px;line-height:1;opacity:0.7;padding:0;">�</button>
+                </div>
+            </div>`;
+        document.body.appendChild(banner);
+        sessionStorage.setItem('pwa-install-prompted', 'true');
+    }
+
+    function installPWA() {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then(r => {
+                console.log('[PWA] Install outcome:', r.outcome);
+                deferredPrompt = null;
+            });
+        }
+        dismissInstallPrompt();
+    }
+
+    function dismissInstallPrompt() {
+        const banner = document.getElementById('pwa-install-banner');
+        if (banner) { banner.style.animation = 'slideDown 0.3s ease'; setTimeout(() => banner.remove(), 300); }
+    }
+
+    window.addEventListener('appinstalled', () => { console.log('[PWA] Installed'); dismissInstallPrompt(); });
+
+    const pwaStyle = document.createElement('style');
+    pwaStyle.textContent = `
+        @keyframes  slideUp   { from { transform:translateY(100px);opacity:0; } to { transform:translateY(0);opacity:1; } }
+        @keyframes  slideDown { from { transform:translateY(0);opacity:1; } to { transform:translateY(100px);opacity:0; } }`;
+    document.head.appendChild(pwaStyle);
+</script>
+
+<style>
+/* GTranslate floating widget repositioning */
+.gtranslate_wrapper {
+    border-radius: 8px !important;
+    padding: 4px 6px !important;
+    border: 1px solid rgba(51, 65, 85, 0.6) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    max-width: 160px !important;
+    background: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(8px) !important;
+    position: fixed !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Smartsupp live-chat widget: keep on the right, above the red scroll-to-top button */
+#smartsupp-widget,
+#smartsupp-chat-application,
+.smartsupp-button,
+.smartsupp-chat,
+.smartsupp-widget {
+    right: 4px !important;
+    left: auto !important;
+    bottom: 86px !important;
+    z-index: 9999 !important;
+}
+
+/* On mobile: keep translator on left, chat above scroll-up button */
+@media (max-width: 767px) {
+    .gtranslate_wrapper {
+        bottom: 52px !important;
+        left: 12px !important;
+        right: auto !important;
+        z-index: 45 !important;
+    }
+
+    #smartsupp-widget,
+    #smartsupp-chat-application,
+    .smartsupp-button,
+    .smartsupp-chat,
+    .smartsupp-widget {
+        right: 4px !important;
+        left: auto !important;
+        bottom: 86px !important;
+        z-index: 9999 !important;
+    }
+}
+
+/* On desktop: position normally */
+@media (min-width: 768px) {
+    .gtranslate_wrapper {
+        bottom: 20px !important;
+        left: 20px !important;
+        right: auto !important;
+        z-index: 45 !important;
+    }
+
+    #smartsupp-widget,
+    #smartsupp-chat-application,
+    .smartsupp-button,
+    .smartsupp-chat,
+    .smartsupp-widget {
+        right: 20px !important;
+        left: auto !important;
+        bottom: 90px !important;
+        z-index: 9999 !important;
+    }
+}
+
+.gtranslate_wrapper select {
+    font-size: 10px !important;
+    padding: 2px 4px !important;
+    height: auto !important;
+    background: transparent !important;
+    color: #cbd5e1 !important;
+    border: none !important;
+}
+
+.gtranslate_wrapper img {
+    width: 14px !important;
+    height: auto !important;
+    margin-right: 4px !important;
+}
+
+.gtranslate_wrapper * {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+</style>
+<div class="gtranslate_wrapper"></div>
+<script>
+    window.gtranslateSettings = {
+        default_language: "en",
+        alt_flags:{"en":"usa"},
+        wrapper_selector: ".gtranslate_wrapper",
+        flag_style: "3d",
+    };
+</script>
+<script src="js/float.js" defer=""></script>
+
+ <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'e4df921c67a17e3115e43507cfca977f85835c33';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+
+
+
+<div class="gtranslate_wrapper"></div>
+<script>
+    window.gtranslateSettings = {
+        default_language: "en",
+        alt_flags:{"en":"usa"},
+        wrapper_selector: ".gtranslate_wrapper",
+        flag_style: "3d",
+    };
+</script>
+<script src="js/float.js" defer=""></script>
+
+
+
+</body></html>
